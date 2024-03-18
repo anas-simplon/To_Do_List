@@ -1,5 +1,7 @@
 # depslib dependency file v1.0
-1710637930 source:c:\users\simplon\desktop\simplon\mini_projet_c\to_do_list\main.c
+1710756985 source:c:\users\simplon\desktop\simplon\mini_projet_c\to_do_list\main.c
 	<stdio.h>
 	<stdlib.h>
+	<stdbool.h>
+	<string.h>
 
