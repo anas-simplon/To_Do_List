@@ -4,7 +4,7 @@ This apllicantion is simple C code simulation of to do list application created 
 
 **this application menu in *C***
 
-```
+```c
 do{
 
             printf("\n1|| Pour ajoutter une tache tappez 1\n");
@@ -24,7 +24,7 @@ Cette application utilise le concepte des listes doublement chainées à fin de 
 
 **List declaration in *C***
 
-```
+```c
 typedef struct
 {
     int annee,mois,jour,heure,minute;
