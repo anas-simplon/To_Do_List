@@ -84,7 +84,7 @@ node createNode(){
                 printf("Annee :     ");
                 do{
                     temp->date.annee = read_int("Anne");
-                }while(temp->date.annee != 2024);
+                }while(temp->date.annee < 2024);
 
                 printf("Mois  :     ");
                 do{
@@ -129,7 +129,7 @@ node createNode(){
 int compare_par_date(Date date1,Date date2)
 {
     if(date1.annee == date2.annee && date1.mois == date2.mois && date1.jour == date2.jour && date1.heure == date2.heure && date1.minute == date2.minute)
-        return 0;
+        {return 0;}
     if(date1.mois > date2.mois)
     {
         return 1;
@@ -151,8 +151,7 @@ int compare_par_date(Date date1,Date date2)
         }
     }
 
-    if(date1.annee == date2.annee && date1.mois == date2.mois && date1.jour == date2.jour && date1.heure == date2.heure && date1.minute == date2.minute)
-        return 0;
+
 return -1;
 }
 
@@ -200,9 +199,12 @@ Pointers Insert_Node(node head,node temp)
                     }
         }else
         {
+
                     temp->next = p->next;
                     p->next = temp;
                     temp->prev = p;
+                    pointers.first=head;
+                    pointers.last=temp;
 
         }
 return pointers;
