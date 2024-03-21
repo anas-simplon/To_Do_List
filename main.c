@@ -452,7 +452,7 @@ int main()
                 }while(choix<1 || choix > 3);
 
                 head = my_List.first;
-                printf("\n-\n********----**********TO DO LIST************----**********\n");
+                printf("\n\n********----**********TO DO LIST************----**********\n");
                 printf("******************AFFICHAGE PRIORITE %d**********************\n\n",choix);
                 while(head->next != NULL)
                     {
